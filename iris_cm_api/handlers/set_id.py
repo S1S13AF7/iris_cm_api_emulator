@@ -6,7 +6,7 @@ bot = BotBlueprint()
 bot.labeler.vbml_ignore_case = True
 
 
-@bot.on.chat_message(text="установить ид <chat_id>")
+@bot.on.chat_message(text=["установить ид <chat_id>", "🗓 Код беседы: <chat_id>"])
 @utils.admin_only
 async def set_iris_id_wrapper(m: Message, chat_id: str):
     if len(chat_id) > 8:
