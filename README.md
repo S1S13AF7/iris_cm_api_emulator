@@ -11,7 +11,7 @@
 # Создаем папку, открываем в этой папке командную строку (shift + ПКМ)
 py -m venv env
 env\Scripts\activate.bat
-pip install -U https://github.com/timoniq/vkbottle/archive/master.zip
+pip install https://github.com/timoniq/vkbottle/archive/master.zip
 pip install https://github.com/S1S13AF7/iris_cm_api_emulator/archive/master.zip
 ```
 
@@ -29,7 +29,7 @@ py -m iris_cm_api
 ```shell
 # Открываем в созданной папке командную строку (shift + ПКМ)
 env\Scripts\activate.bat
-pip install -U https://github.com/timoniq/vkbottle/archive/master.zip
+pip install https://github.com/timoniq/vkbottle/archive/master.zip --upgrade
 pip install https://github.com/S1S13AF7/iris_cm_api_emulator/archive/master.zip --upgrade
 ```
 
