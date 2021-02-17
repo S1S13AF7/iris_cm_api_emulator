@@ -12,7 +12,7 @@ except FileNotFoundError:
 
 setuptools.setup(
     name="iris_cm_api",
-    version="0.1.1",
+    version="0.1.2",
     author="lordralinc",
     description="Эмулятор сигналов Iris CM Callback API",
     long_description=long_description,
@@ -26,9 +26,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent",
     ],
-    install_requires=[
-        "vkbottle @ git+https://github.com/timoniq/vkbottle@master",
-        "tortoise-orm",
-    ],
+    install_requires=["tortoise-orm"],
     include_package_data=True,
 )

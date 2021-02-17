@@ -6,6 +6,7 @@
 
 # Установка 
 ```shell
+pip install -U https://github.com/timoniq/vkbottle/archive/master.zip
 pip install iris_cm_api
 ```
 
@@ -20,6 +21,7 @@ python3 -m iris_cm_api
 
 # Обновление 
 ```shell
+pip install -U https://github.com/timoniq/vkbottle/archive/master.zip
 pip install -U iris_cm_api
 ```
 
