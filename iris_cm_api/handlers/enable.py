@@ -16,11 +16,28 @@ async def enable_wrapper(m: Message):
     return "✅ Модуль включен"
 
 
-@bot.on.chat_message(command="отключить")
+@bot.on.chat_message(command="выключить")
 @utils.admin_only
-async def enable_wrapper(m: Message):
+async def disable_wrapper(m: Message):
     chat = await utils.get_chat(m.peer_id)
     chat.enable = False
     await chat.save()
     return "✅ Модуль деактивирован"
 
+
+@bot.on.chat_message(command="+речь")
+@utils.admin_only
+async def enable_speech_wrapper(m: Message):
+    chat = await utils.get_chat(m.peer_id)
+    chat.transcript = True
+    await chat.save()
+    return "✅ Речь включена"
+
+
+@bot.on.chat_message(command="-речь")
+@utils.admin_only
+async def disable_speech_wrapper(m: Message):
+    chat = await utils.get_chat(m.peer_id)
+    chat.transcript = False
+    await chat.save()
+    return "✅ Речь деактивирована"
